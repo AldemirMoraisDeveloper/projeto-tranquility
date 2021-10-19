@@ -16,6 +16,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -66,6 +68,9 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-width: 280px;
+    max-width: 100%;
+    margin: auto;
 }
 header nav{
     display: flex;
@@ -97,45 +102,6 @@ header nav ul li{
 }
 /*RESPONSIVIDADE*/
 
-/*Landscape phone portrait tablet*/
-@media (max-width: 767px) {
-}
-
-/*Landscape phones and down*/
-@media (max-width: 480px) {
-     
-    body{
-        height: calc(100vh - 55px);
-    }
-
-    header nav ul{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 0;
-        background-color: blue;
-        margin: 0;
-        color: #fff;
-        font-weight: bold;
-        height: 55px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header nav p{
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
-/*Portrait tablet landscape and desktop*/
-/*@media (max-width: 768px) and (max-width: 979px) {}*/
-
-/*Lard desktop*/
-/*@media (max-width: 1200px) {}*/
 
 
 
