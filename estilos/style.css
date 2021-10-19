@@ -64,7 +64,7 @@ button:hover{
 }
 header{
     height: calc(100vh - 150px);
-    background: url('../imagens/capa.jpg');
+    background: url('../imagens/capa-m.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -91,10 +91,12 @@ header nav ul li{
     max-width: 400px;
     margin: 150px auto;
     text-align: center;
+    color: #fff;
 }
 .header-content h1{
     margin-bottom: 10px;
     font-size: 3em;
+    color: #fff;
 }
 
 .acomodacoes{
