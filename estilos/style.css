@@ -114,9 +114,8 @@ header nav ul li{
         left: 0;
         width: 100%;
         padding: 0;
+        background-color: blue;
         margin: 0;
-        
-        background-color: yellow;
         color: #fff;
         font-weight: bold;
         height: 55px;
