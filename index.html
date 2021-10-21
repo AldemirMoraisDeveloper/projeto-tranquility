@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tranquility Hotel</title>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="estilos/style.css">
+    
 </head>
 <body>
    <header>
@@ -32,12 +34,26 @@
       </div> <!--Menu ok!-->
        
     <section class="quartos">
+         <div class="card">
+            <div class="card-text-top">
+               <p>Standard</p>
+            </div>
+            <img class="card-image" src="../imagens/suite-solteiro.jpg">
+            <div class="card-text">
+               <h1>Suíte Solteiro</h1>
+               <p><del>R$ 160</del> <sup>R$</sup><strong>120.00</strong></p>
+               <p>Diária</p>
+               <ul>
+                  <li><i data-feather="coffee"></i> Café da manhã incluso</li>
+                  <li><i data-feather="wifi"></i> Wifi</li>
+                  <li><i data-feather="tv"></i> TV</li>
+               </ul>
+           </div>
+         </div>
 
    </section>
-       
-      
-
-
-
+   <script>
+      feather.replace()
+    </script>   
 </body>
 </html>
