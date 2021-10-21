@@ -9,6 +9,8 @@
     --cor01:#052437;
     --cor02:#0D74D1;
     --cor03:#D1860D;
+    --cor04:gray;
+    --cor05:rgb(238, 232, 232);
    
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Neue', cursive;
@@ -128,15 +130,26 @@ header nav ul li{
 }
 
 .quartos{
-    background-color: var(--cor01);
-    height: 500px;
+    background-color: var(--cor05);
+    padding: 15px;
 }
+
+.quartos .quarto-cards{
+    display: flex;
+}
+
+.quartos .quarto-title{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
 .quartos .card{
     width: 250px;
     height: 360px;
     background-color: #fff;
     border-radius: 20px 0px;
-    margin: auto;
+    margin: 25px auto;
     position: relative;
 }
 .quartos .card-image{
@@ -161,12 +174,14 @@ header nav ul li{
     display: flex;
     align-items: center;
     margin: 3px 0;
+    color: var(--cor04);
+    font-weight: lighter;
 
 }
 
 .quartos .card-text li svg{
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
 }
 
@@ -178,13 +193,22 @@ header nav ul li{
     position: absolute;
     top: 15px;
     right: 0;
-    background-color: var(--cor02);
+    background-color: var(--cor03);
     border-radius: 5px 0 0 5px;
     padding: 5px 10px;
     
 }
 
-.quartos .card .card-text-top p{
+.quartos .card .card-text-bottom{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    background-color: var(--cor02);
+    border-radius: 0 5px 5px 0;
+    padding: 5px 10px;
+}
+
+.quartos .card .card-tag p{
     font-family: cursive, sans-serif;
     margin: 0;
     font-size: .8em;
@@ -236,7 +260,26 @@ header nav ul li{
     height: calc(100vh - 55px);
     }
 
-
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-weight: bold;
+        height: 55px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    
+    header nav p{
+        width: 100%;
+        text-align: center;
+     }
 }
 
 
