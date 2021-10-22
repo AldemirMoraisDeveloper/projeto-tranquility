@@ -105,7 +105,9 @@ header nav ul{
     
 }
 
-
+header nav ul li{
+    margin: 15px;
+}
 
 .header-content{
     max-width: 400px;
