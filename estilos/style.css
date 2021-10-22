@@ -253,8 +253,10 @@ header nav ul li{
         }
     
     header nav p{
+        font-size: 1.5em;
         width: 100%;
         text-align: center;
+        color: var(--cor03);
      }
 }
 
