@@ -264,7 +264,7 @@ header nav ul li{
    margin-bottom: 55px;
     }
 
-    header nav ul{
+    header nav ul li{
         position: fixed;
         bottom: 0;
         left: 0;
