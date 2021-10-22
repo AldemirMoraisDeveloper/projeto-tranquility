@@ -92,9 +92,10 @@ header nav{
 
 header nav p{
     font-weight: lighter;
-    font-size: 1em;
+    font-size: 3em;
     margin: 0;
-    padding: 10px 20px !important;
+    color: var(--cor03);
+
 }
 
 header nav ul{
@@ -246,6 +247,8 @@ header nav ul li{
         color: #fff;
         font-weight: bold;
         height: 55px;
+
+        z-index: 99;
     
         display: flex;
         justify-content: space-between;
@@ -253,10 +256,8 @@ header nav ul li{
         }
     
     header nav p{
-        font-size: 1.5em;
         width: 100%;
         text-align: center;
-        color: var(--cor03);
      }
 }
 
