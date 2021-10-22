@@ -85,10 +85,10 @@ header nav{
     margin: auto 30px;
 }
 
-nav li:hover{
+/*nav li:hover{
     cursor: pointer;
     color: var(--cor03);
-}
+}*/
 
 header nav p{
     font-weight: lighter;
@@ -226,35 +226,6 @@ header nav ul li{
     nav li{
         display: none;
     }
-
-.menu-toggle{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    margin-top: 12px;
-    margin-right: 20px;
-    cursor: pointer; /*Passando o mouse por cima "Mãozinha"*/
- }
-
- .menu-toggle > div{
-    background-color: #fff;
-    height: 5px;
-    width: 100%;
-    margin: 5px;
- }
- header.on{
-     position: absolute;
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: unset;
- }
- nav.on{
-     align-self: center;
-     display: flex;
- }
-
 }
 
 /*Landscape phones and down*/
