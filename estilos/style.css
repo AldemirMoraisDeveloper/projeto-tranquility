@@ -71,9 +71,10 @@ button:hover{
 }
 
 header{
+    /*https://cdn.pixabay.com/photo/2015/09/02/12/40/swimming-pool-918593__340.jpg*/ /*LINK DA CAPA*/
     min-height: 550px;
     background: url('../imagens/capa.jpg');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
     min-width: 320px;
@@ -85,15 +86,19 @@ header nav{
     justify-content: space-between;
     margin: auto 30px;
 }
+nav li a{
+    text-decoration: none;
+}
 
-/*nav li:hover{
+nav li a:hover{
     cursor: pointer;
     color: var(--cor03);
-}*/
+    
+}
 
 header nav p{
     font-weight: lighter;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0;
     color: var(--cor03);
 
