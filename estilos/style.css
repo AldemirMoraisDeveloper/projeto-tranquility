@@ -1,222 +1,222 @@
 @charset "UTF-8";
-
 @font-face {
     font-family: 'Neue';
     src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
 }
 
-:root{
-    --cor01:#052437;
-    --cor02:#0D74D1;
-    --cor03:#D1860D;
-    --cor04:#CBB26A;
-    --cor05:rgb(238, 232, 232);
-   
+:root {
+    --cor01: #052437;
+    --cor02: #0D74D1;
+    --cor03: #D1860D;
+    --cor04: #CBB26A;
+    --cor05: rgb(203, 203, 206);
+    --cor06: #a1caee;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Neue', cursive;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: var(--fonte-destaque), sans-serif;
     margin: 0;
     width: 100vw;
 }
 
+
 /*STYLE HEADER*/
 
-button{
+button {
     width: 100px;
     height: 32px;
     line-height: 31px;
     border-radius: 5px;
-    background-color: rgb(0,0,0,0.1);
-    color:#fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
     border: 1px solid #fff;
     text-decoration: none;
-    
     animation-name: botao;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
-    transition: 0,5s;
+    transition: 0, 5s;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor03);
-    transition: 0,5s;
+    transition: 0, 5s;
     cursor: pointer;
 }
 
-@keyframes botao{
-    0%{
+@keyframes botao {
+    0% {
         transform: translateX(0);
     }
-    25%{
+    25% {
         transform: translateX(30px);
     }
-    50%{
+    50% {
         transform: translateX(0);
     }
-    75%{
+    75% {
         transform: translateX(30px);
     }
-    100%{
+    100% {
         transform: translateX(0px);
     }
 }
 
-header{
-    /*https://cdn.pixabay.com/photo/2015/09/02/12/40/swimming-pool-918593__340.jpg*/ /*LINK DA CAPA*/
+header {
+    /*https://cdn.pixabay.com/photo/2015/09/02/12/40/swimming-pool-918593__340.jpg*/
+    /*LINK DA CAPA*/
     min-height: 550px;
     background: url('../imagens/capa.jpg');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-width: 320px;
 }
 
-header nav{
+header nav {
     color: #fff;
     display: flex;
     justify-content: space-between;
     margin: auto 30px;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
 }
 
-nav li a:hover{
+nav li a:hover {
     cursor: pointer;
     color: var(--cor03);
-    
+    transition-duration: .5s;
 }
 
-header nav p{
+header nav p {
     font-weight: lighter;
     font-size: 2em;
-    /*margin: 0;*/
+    /* margin: 0;*/
     color: var(--cor03);
-
 }
 
-header nav ul{
-    
+header nav ul {
     list-style: none;
     display: flex;
-    
+    margin-top: 15px;
 }
 
-header nav ul li{
+header nav ul li {
     margin: 0 15px;
     color: var(--cor02);
     font-size: 1em;
 }
 
-.header-content{
+.header-content {
     max-width: 400px;
     margin: 200px auto;
     text-align: center;
-    color:var(--cor03);
-
+    color: var(--cor03);
 }
 
-.header-content h1{
+.header-content h1 {
     margin-bottom: -10px;
     font-size: 4em;
     color: var(--cor02);
 }
 
-.header-content p{
+.header-content p {
     font-family: var(--fonte-destaque);
     max-width: 600px;
     padding-right: 10px;
     padding-right: 10px;
     margin: auto;
-    text-shadow:5px 5px 30px var(--cor01);   
-    
+    text-shadow: 5px 5px 30px var(--cor01);
 }
 
-.quartos{
+.quartos {
     background-color: var(--cor05);
     padding: 15px;
 }
 
-.quartos .quarto-cards{
-    display: flex; /*Na mesma linha*/
+.quartos .quarto-cards {
+    display: flex;
+    /*Na mesma linha*/
     margin: auto;
     max-width: 950px;
-    flex-wrap: wrap; /*Quebra a página*/
+    flex-wrap: wrap;
+    /*Quebra a página*/
     justify-content: center;
 }
 
-.quartos .quarto-title{
+.quartos .quarto-title {
     width: 100%;
     text-align: center;
     margin: 25px 0;
-    color: var(--cor03);
+    color: var(--cor01);
 }
 
-.quartos .card{
+.quartos .card {
     width: 250px;
-    height: 360px;
+    height: 400px;
     background-color: #fff;
     border-radius: 20px 0px;
     margin: 25px;
     position: relative;
 }
-.quartos .card-image{
+
+.quartos .card-image {
     width: 250px;
     height: 200px;
     border-radius: 20px 0 0 0;
+    object-fit: cover;
 }
 
-.quartos .card-text{
+.quartos .card-text {
     margin-top: 15px;
     padding: 0 15px;
 }
 
-.quartos .card-text ul{
+.quartos .card-text ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
 }
-.quartos .card-text ul li{
+
+.quartos .card-text ul li {
     font-size: .8em;
     display: flex;
     align-items: center;
     margin: 3px 0;
     color: var(--cor04);
     font-weight: lighter;
-
 }
 
-.quartos .card-text li svg{
+.quartos .card-text li svg {
     width: 16px;
     height: 16px;
     margin-right: 10px;
 }
 
-.quartos .card-text h1{
+.quartos .card-text h1 {
     font-size: 1em;
 }
 
-.quartos .card .card-text-top{
+.quartos .card .card-text-top {
     position: absolute;
     top: 15px;
     right: 0;
     background-color: var(--cor03);
     border-radius: 5px 0 0 5px;
     padding: 5px 10px;
-    
 }
 
-.quartos .card .card-text-bottom{
+.quartos .card .card-text-bottom {
     position: absolute;
     top: 160px;
     left: 0;
@@ -225,37 +225,78 @@ header nav ul li{
     padding: 5px 10px;
 }
 
-.quartos .card .card-tag p{
-    font-family: cursive, sans-serif;
+.quartos.card-esgotado {
+    font-family: var(--fonte-padrao);
+    font-size: .8em;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    background-color: red;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 10px;
+}
+
+.quartos .card .card-tag p {
+    font-family: var(--fonte-padrao);
     margin: 0;
     font-size: .8em;
     color: #fff;
     font-weight: lighter;
 }
 
+
+/*STYLE PARA SEVIÇOS*/
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servicos-title {
+    text-align: center;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+di .servicos .card svg {
+    width: 60px;
+    height: 60px;
+}
+
+
 /*RESPONSIVIDADE*/
 
+
 /*Landscape phone portrait tablet*/
+
 @media (max-width: 767px) {
-    nav li a{
+    nav li a {
         display: none;
     }
 }
 
-/*Landscape phones and down*/
-@media (max-width: 480px) {
-        body{
-            margin-bottom: 55px;
-        }
 
-     header nav ul li a{
+/*Landscape phones and down*/
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul li {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
         padding: 0;
         margin: 0;
-        z-index: 99;/*Quanto maior o valor,a distância de baixo   para cima do card ficará mais responsiva*/
+        z-index: 99;
+        /*Quanto maior o valor,a distância de baixo   para cima do card ficará mais responsiva*/
         background-color: var(--cor02);
         color: #fff;
         font-weight: bold;
@@ -264,25 +305,21 @@ header nav ul li{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        }
-    
-    header nav p{
+    }
+    header nav p {
         width: 100%;
         text-align: center;
-     }
+    }
 }
 
 
 /*Portrait tablet landscape and desktop*/
+
+
 /*@media (max-width: 768px) and (max-width: 979px) {}*/
 
+
 /*Lard desktop*/
+
+
 /*@media (max-width: 1200px) {}*/
-
-
-
-
-
-
-
-
