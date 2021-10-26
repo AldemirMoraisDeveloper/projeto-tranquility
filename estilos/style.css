@@ -231,8 +231,8 @@ header nav ul li {
     position: absolute;
     top: 160px;
     left: 0;
-    background-color: red;
-    color: #fff;
+    background-color: var(--cor01);
+    color: var(--cor03);
     border-radius: 0 5px 5px 0;
     padding: 5px 10px;
 }
@@ -254,6 +254,16 @@ header nav ul li {
 
 .servicos .servicos-title {
     text-align: center;
+    margin: 35px 0;
+    color: var(--cor01);
+}
+.servicos .servicos-cards{
+    padding-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 .servicos .card {
@@ -264,11 +274,47 @@ header nav ul li {
     align-items: center;
 }
 
-di .servicos .card svg {
+.servicos .card svg {
     width: 60px;
     height: 60px;
+    margin: 50px;
+    transition-duration: 1s;
 }
 
+.servicos .card svg:hover{
+    stroke: var(--cor02);
+    transform: scale(1.1);
+}
+
+.servicos .card h3 {
+   font-weight: bold;
+   margin-bottom: 20px;
+   color: var(--cor01);
+}
+
+.servicos .card p {
+    color: var(--cor02);
+    font-size: 1em;
+    text-align: center;
+ }
+
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+
+.servicos .saiba-mais-servico{
+    background-color: hsl(37, 88%, 44%,0.7);
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+ 
 
 /*RESPONSIVIDADE*/
 

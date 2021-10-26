@@ -30,7 +30,7 @@
         <div class="header-content">
             <h1>Tranquility Hotel</h1>
             <p>A tranquilidade que você precisa está aqui!</p>
-            <button>Saiba Mais</button>
+            <button>Explorar</button>
         </div>
 
     </header>
@@ -84,7 +84,7 @@
                 </div>
                 <div>
                     <div class="quartos card-esgotado">
-                        <p>Esgotado</p>
+                        <p>Último Quarto</p>
                     </div>
                     <img class="card-image" src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Suíte Luxo">
                     <div class="card-text">
@@ -108,26 +108,58 @@
         <h1 class="servicos-title">Serviços Oferecidos Pelo Tranquility</h1>
         <div class="servicos-cards">
             <div class="card">
-                <i data-feather="briefcase"></i>
-                <h3>Traslado</h3>
-                <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
+                <i data-feather="map-pin"></i>
+                <div class="card-content">
+                   <h3>Estacionamento</h3>
+                   <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
+                </div>
+                <button class="saiba-mais-servico">Saiba Mais</button>
             </div>
             <div class="card">
-                <i data-feather=""></i>
-                <h3>Traslado</h3>
-                <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
+                <i data-feather="map-pin"></i>
+                <div class="card-content">
+                   <h3>Serviços de Quarto</h3>
+                   <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
+                </div>
+                <button class="saiba-mais-servico">Saiba Mais</button>
             </div>
-            <div class=" card ">
-                <i data-feather="map "></i>
-                <h3>Traslado</h3>
-                <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
+            <div class="card">
+                <i data-feather="map-pin"></i>
+                <div class="card-content">
+                   <h3>Restaurante</h3>
+                   <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
+                </div>
+                <button class="saiba-mais-servico">Saiba Mais</button>
             </div>
         </div>
     </section>
 
-    <script>
-        feather.replace()
-    </script>
-</body>
+    <section class="contato">
+        <div id="map"></div>
+    </section>
 
+    <script>
+        feather.replace();
+
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"
+    async
+    ></script>
+</body>
 </html>
