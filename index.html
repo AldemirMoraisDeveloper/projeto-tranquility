@@ -19,15 +19,15 @@
             </a>
             <!--logo ok-->
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Acomodações</a></li>
-                <li><a href="#">O Hotel</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quartos">Acomodações</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <li><a href="#">Cadastro</a></li>
 
             </ul>
         </nav>
-        <div class="header-content">
+        <div id="home" class="header-content">
             <h1>Tranquility Hotel</h1>
             <p>A tranquilidade que você precisa está aqui!</p>
             <button>Explorar</button>
@@ -36,7 +36,7 @@
     </header>
     <!--Menu ok!-->
 
-    <section class="quartos">
+    <section id="quartos" class="quartos">
         <h1 class="quarto-title">Conheça nossas acomodações</h1>
         <div class="quarto-cards">
             <div class="card">
@@ -104,7 +104,7 @@
             </div>
     </section>
 
-    <section class="servicos">
+    <section id="servicos" class="servicos">
         <h1 class="servicos-title">Serviços Oferecidos Pelo Tranquility</h1>
         <div class="servicos-cards">
             <div class="card">
@@ -116,7 +116,7 @@
                 <button class="saiba-mais-servico">Saiba Mais</button>
             </div>
             <div class="card">
-                <i data-feather="map-pin"></i>
+                <i data-feather="coffee"></i>
                 <div class="card-content">
                    <h3>Serviços de Quarto</h3>
                    <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
@@ -124,7 +124,7 @@
                 <button class="saiba-mais-servico">Saiba Mais</button>
             </div>
             <div class="card">
-                <i data-feather="map-pin"></i>
+                <i data-feather="coffee"></i>
                 <div class="card-content">
                    <h3>Restaurante</h3>
                    <p>Fazemos o traslado em todo o estado, em Aeroportos e Rodoviárias para o Hotel<strong>Tranquility</strong>, sendo vindas e voltas.</p>
@@ -134,12 +134,33 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section id="contato" class="contato">
+        <div class="contato-card">
+            <h1>Fale Conosco</h1>
+            <ul>
+               <li><i data-feather="map-pin"></i>Rua Leblon, 255 - Praia Grande - SP</li>  
+               <li><i data-feather="mail"></i>contato@tranquilityhotel.com.br</li>  
+               <li><i data-feather="phone"></i>+55 - 13 922555522</li>  
+               <li><i data-feather="instagram"></i>Instagram</li>  
+               <li><i data-feather="facebook"></i>Facebook</li>  
+               <li><i data-feather="twitter"></i>Twitter</li>  
+            </ul>
+        </div>
         <div id="map"></div>
     </section>
 
     <script>
         feather.replace();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
         function initMap() {
         // The location of Uluru

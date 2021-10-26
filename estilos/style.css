@@ -22,10 +22,24 @@
 }
 
 body {
+    background-image: url('../imagens/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: var(--fonte-destaque), sans-serif;
     margin: 0;
     width: 100vw;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}   
 
 
 /*STYLE HEADER*/
@@ -39,7 +53,7 @@ button {
     color: #fff;
     border: 1px solid #fff;
     text-decoration: none;
-    animation-name: botao;
+    animation-name: none;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     transition: 0, 5s;
@@ -139,7 +153,7 @@ header nav ul li {
 }
 
 .quartos {
-    background-color: var(--cor05);
+    background-color:rgb(203, 203, 206, 0.6);
     padding: 15px;
 }
 
@@ -246,10 +260,12 @@ header nav ul li {
 }
 
 
-/*STYLE PARA SEVIÇOS*/
+/*STYLE PARA SERVIÇOS*/
 
 .servicos {
     padding: 15px;
+    background-color:hsl(45, 48%, 61%,0.4);
+
 }
 
 .servicos .servicos-title {
@@ -284,6 +300,7 @@ header nav ul li {
 .servicos .card svg:hover{
     stroke: var(--cor02);
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .servicos .card h3 {
@@ -304,20 +321,91 @@ header nav ul li {
 }
 
 .servicos .saiba-mais-servico{
-    background-color: hsl(37, 88%, 44%,0.7);
+    background-color: var(--cor03);
+    animation-name: none;
 }
+
+/*STYLE PARA CONTATO*/
 
 #map {
     height: 400px;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
-  }
+}
 
- 
+.contato {
+    padding: 60px;
+    background-color: var(--cor05);
+    position: relative;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    color: var(--cor01);
+    position: absolute;
+    z-index: 99;
+
+    border-radius: 10px;
+
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card h1{
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card li{
+    font-size: 1.1em;
+    font-weight: lighter;
+    color: var(--cor04);
+
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card li svg{
+    width: 16px;
+    margin: 10px;
+   
+}
 
 /*RESPONSIVIDADE*/
 
+/*Especial para mapa*/
+
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+
+    .contato .contato-card{
+        left: 40px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    
+   .contato {
+        padding: 60px;
+    }
+
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
 
 /*Landscape phone portrait tablet*/
 
@@ -327,14 +415,13 @@ header nav ul li {
     }
 }
 
-
 /*Landscape phones and down*/
 
 @media (max-width: 480px) {
     body {
         margin-bottom: 55px;
     }
-    header nav ul li {
+    header nav ul {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -347,7 +434,7 @@ header nav ul li {
         color: #fff;
         font-weight: bold;
         height: 55px;
-        text-align: center;
+        /*text-align: center;*/
         display: flex;
         justify-content: space-between;
         align-items: center;
