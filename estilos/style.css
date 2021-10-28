@@ -4,6 +4,8 @@
     src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
 }
 
+/*PALETA DE CORES*/
+
 :root {
     --cor01: #052437;
     --cor02: #0D74D1;
@@ -476,7 +478,6 @@ header nav ul li {
 /*@media (max-width: 1200px) {}*/
 
 /*STYLE PARA CADASTRO*/
-/*https://www.youtube.com/watch?v=MkXuQ9CcHqU*/
 
 main.container{
     background-color: #fff;
