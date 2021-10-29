@@ -101,7 +101,6 @@ header {
 /*STYLE PARA RESERVA*/
 
 
-
 /*STYLE PARA HEADER NAV*/
 
 header nav {
@@ -477,7 +476,7 @@ header nav ul li {
 
 /*@media (max-width: 1200px) {}*/
 
-/*STYLE PARA CADASTRO*/
+/*STYLE PARA LOGIN*/
 
 main.container{
     background-color: #fff;
@@ -487,6 +486,8 @@ main.container{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.261);
     border-radius: 8px;
     margin: auto;
+    margin-top: 150px;
+    
 }
 
 main h2 {
@@ -612,3 +613,35 @@ form input[type="submit"]:hover {
 .footer .social-field.facebook {
     background-image: linear-gradient(to right, #04304b, #31597c);
 }
+
+.footer .social-field.instagram {
+    background-image: linear-gradient(to right, #6C4BB9, #B2379E);
+}
+
+label {
+    font-family: var(--fonte-padrao);
+}
+
+.nova-senha {
+    font-family: var(--fonte-padrao);
+}
+
+.cadastro {
+    margin-top: 2em;
+    padding: 0.4em;
+    background-image: linear-gradient(to left, #144f74, #0D74D1 );
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: lighter;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+
+.cadastro:hover {
+    letter-spacing: 0.5px;
+    background-image: linear-gradient(to right, #295977, #57abf5 );
+}
+
