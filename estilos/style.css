@@ -486,7 +486,7 @@ main.container{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.261);
     border-radius: 8px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: -350px;
     
 }
 
@@ -643,5 +643,9 @@ label {
 .cadastro:hover {
     letter-spacing: 0.5px;
     background-image: linear-gradient(to right, #295977, #57abf5 );
+}
+
+.login {
+    background: none;
 }
 
