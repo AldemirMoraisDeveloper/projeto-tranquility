@@ -480,8 +480,9 @@ header nav ul li {
 /*STYLE PARA LOGIN*/
 
 .cor-fundo {
+   
     background-color: rgb(68, 39, 237,0.4);
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 
