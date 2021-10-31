@@ -8,7 +8,7 @@
 
 :root {
     --cor01: #052437;
-    --cor02: #0D74D1;
+    --cor02: #4427ed;
     --cor03: #D1860D;
     --cor04: #CBB26A;
     --cor05: rgb(203, 203, 206);
@@ -112,6 +112,7 @@ header nav {
 
 nav li a {
     text-decoration: none;
+    color: #fff;
 }
 
 nav li a:hover {
@@ -135,7 +136,7 @@ header nav ul {
 
 header nav ul li {
     margin: 0 15px;
-    color: var(--cor02);
+    color: #fff;
     font-size: 1em;
 }
 
@@ -440,7 +441,7 @@ header nav ul li {
     body {
         margin-bottom: 55px;
     }
-    header nav ul {
+    header nav ul li a {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -448,10 +449,10 @@ header nav ul li {
         padding: 0;
         margin: 0;
         z-index: 99;
-        /*Quanto maior o valor,a distância de baixo   para cima do card ficará mais responsiva*/
+        /*Quanto maior o valor,a distância de baixo para cima do card ficará mais responsiva*/
         background-color: var(--cor02);
         color: #fff;
-        font-weight: bold;
+        font-weight: lighter;
         height: 55px;
         /*text-align: center;*/
         display: flex;
@@ -477,6 +478,13 @@ header nav ul li {
 /*@media (max-width: 1200px) {}*/
 
 /*STYLE PARA LOGIN*/
+
+.cor-fundo {
+    background-color: rgb(68, 39, 237,0.4);
+    border-radius: 10px;
+}
+
+
 
 main.container{
     background-color: #fff;
