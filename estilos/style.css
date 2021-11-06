@@ -8,7 +8,7 @@
 
 :root {
     --cor01: #052437;
-    --cor02: #4427ed;
+    --cor02: rgb(27, 27, 124);
     --cor03: #D1860D;
     --cor04: #CBB26A;
     --cor05: rgb(203, 203, 206);
@@ -96,9 +96,31 @@ header {
     background-size: cover;
     background-position: center;
     min-width: 320px;
+    margin-bottom: 20px;
 }
 
 /*STYLE PARA RESERVA*/
+
+div.reservas {
+    width: 1000px;
+    height: 100px;
+    background-color: hsl(203, 83%, 12%,0.3);
+    border-radius: 8px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+div.reservas input {
+    background-color: hsl(240, 64%, 30%,0.5);
+    color: #fff;
+    margin: 30px -20px 10px 50px;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    
+}
 
 
 /*STYLE PARA HEADER NAV*/
@@ -150,7 +172,8 @@ header nav ul li {
 .header-content h1 {
     margin-bottom: -10px;
     font-size: 4em;
-    color: var(--cor02);
+    color: rgba(255, 255, 255, 0.734);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .header-content p {
@@ -421,7 +444,7 @@ header nav ul li {
         padding: 60px;
     }
 
-    .contato .contato-card {
+   .contato .contato-card {
         position: static;
         margin: 40px auto;
     }
@@ -441,7 +464,7 @@ header nav ul li {
     body {
         margin-bottom: 55px;
     }
-    header nav ul li a {
+    header nav ul li a{
         position: fixed;
         bottom: 0;
         left: 0;
@@ -481,7 +504,7 @@ header nav ul li {
 
 .cor-fundo {
    
-    background-color: rgb(68, 39, 237,0.4);
+    background-color: hsl(240, 64%, 30%,0.5);
     border-radius: 0 0 10px 10px;
 }
 
