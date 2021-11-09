@@ -102,14 +102,13 @@ header {
 /*STYLE PARA RESERVA*/
 
 div.reservas {
-    width: 1000px;
+    width: 1025px;
     height: 100px;
-    background-color: hsl(203, 83%, 12%,0.3);
+    background-color: rgba(41, 41, 41, 0.3);
     border-radius: 8px;
     margin: auto;
     justify-content: center;
     align-items: center;
-   
 }
 
 div.reservas input {
@@ -119,9 +118,60 @@ div.reservas input {
     padding: 10px;
     border-radius: 8px;
     display: inline-block;
-    
 }
 
+/*.btreserva:hover {
+    background-color: var(--cor01);
+    cursor: pointer;
+    border: 1px solid #fff;
+}*/
+
+.buscar-quarto {
+    font-family: var(--fonte-padrao);
+    background-color: hsl(240, 64%, 30%, 0.5);
+    color: #fff;
+    margin: 30px;
+    padding: 8px 4px 8px 4px;
+    border-radius: 8px;
+}
+
+.buscar-quarto:hover {
+    background-color: var(--cor01);
+}
+
+.hotel {
+    margin-top: -600px;
+}
+
+.opcoes-quartos {
+    display: inline-block;
+}
+
+.opcao {
+    background-color: hsl(240, 64%, 30%, 0.5);
+    color: #fff;
+    margin: -40px 20px 20px 160px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.opcao2 {
+    position: absolute;
+    background-color: hsl(240, 64%, 30%, 0.5);
+    color: #fff;
+    margin: -20px 20px 0px 160px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.opcao3 {
+    position: absolute;
+    background-color: hsl(240, 64%, 30%, 0.5);
+    color: #fff;
+    margin: -20px 20px 0px 160px;
+    padding: 3px;
+    cursor: pointer;
+}
 
 /*STYLE PARA HEADER NAV*/
 
@@ -478,9 +528,9 @@ header nav ul li {
         font-weight: lighter;
         height: 55px;
         /*text-align: center;*/
-        display: flex;
+       display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; 
     }
     header nav p {
         width: 100%;
