@@ -485,7 +485,7 @@ header nav ul li {
         padding: 60px 0;
     }
 
-    .contato .contato-card{
+    .contato .contato-card {
         left: 40px;
     }
 
@@ -502,7 +502,9 @@ header nav ul li {
 
 .buscar-quarto {
     margin: auto;
+  }
 }
+
 
 
 @media (max-width: 800px) {
@@ -513,7 +515,7 @@ header nav ul li {
 
    .contato .contato-card {
         position: static;
-        margin: 40px auto;
+        margin: 40px -46px;
     }
     
     div.reservas {
@@ -525,9 +527,8 @@ header nav ul li {
     div.reservas input {
         width: 500px;
         margin-right: 44px;
-    
 }
-    
+
     .buscar-quarto {
         margin: auto;
     }
@@ -551,8 +552,9 @@ header nav ul li {
         width: 400px;
         margin-right: 65px;
         margin-left: 40px;
-    
+ }
 }
+
 @media (max-width: 600px) {
     nav li a {
         display: none;
@@ -560,12 +562,15 @@ header nav ul li {
     
     div.reservas input {
         margin-right: 65px;
-        margin-left: -1px;
+        margin-left: 50px;
     }
 
     .buscar-quarto {
         margin: auto;
+        
+        
     }
+}
 
     @media (max-width: 500px) {
         nav li a {
@@ -580,7 +585,7 @@ header nav ul li {
         .buscar-quarto {
             margin: auto;
         }
-}
+    }
 
 /*Landscape phones and down*/
 
@@ -597,11 +602,14 @@ header nav ul li {
     div.reservas input {
         width: 300px;
         margin-right: 44px;
+        margin-left: 40px;
 }
+
     
     .buscar-quarto {
         margin: auto;
     }
+
 
 
     header nav ul li a{
@@ -819,4 +827,4 @@ label {
 
 .login {
     background: none;
-}
+  }
