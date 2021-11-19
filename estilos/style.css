@@ -255,6 +255,16 @@ header nav ul li {
     justify-content: center;
 }
 
+.quartos .quarto-cards2 {
+    display: flex;
+    /*Na mesma linha*/
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    /*Quebra a página*/
+    justify-content: center;
+}
+
 .quartos .quarto-title {
     width: 100%;
     text-align: center;
@@ -635,7 +645,7 @@ header nav ul li {
         text-align: center;
     }
 }
-
+/* Corrigindo o escrollamento mobile*/
 @media (max-width: 786px){
     body, html {
     overflow-x: hidden!important;
@@ -834,3 +844,21 @@ label {
 .login {
     background: none;
   }
+
+/*STYLE PARA HISTÓRIA*/
+
+.titulohistoria {
+    text-align: center;
+    color: var(--cor01);
+}
+.textohistoria {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.historia {
+    color: var(--cor01);
+}
