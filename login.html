@@ -17,9 +17,10 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="acomodacoes.html">Acomodações</a></li>
-                <li><a href="index.html">Serviços</a></li>
-                <li><a href="index.html">Contato</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Reserva</a></li>
             </ul>
         </nav>
     </header>
@@ -71,6 +72,55 @@
             </div>
         </div>
     </main>
+
+    <section id="contato" class="contato">
+        <div class="contato-card">
+            <h1>Fale Conosco</h1>
+            <ul class="redes">
+               <li><i data-feather="map-pin"></i>Rua Leblon, 255 - Praia Grande - SP</li>  
+               <li><i data-feather="mail"></i>contato@tranquilityhotel.com.br</li>  
+               <li><i data-feather="phone"></i>+55 - 13 22225555</li>  
+               <li><i data-feather="instagram"></i>Instagram</li>  
+               <li><i data-feather="facebook"></i>Facebook</li>  
+               <li><i data-feather="twitter"></i>Twitter</li>  
+            </ul>
+        </div>
+        <div id="map"></div>
+    </section>
+
+    <script>
+        feather.replace();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"
+    async
+    ></script>
 
 </body>
 </html>

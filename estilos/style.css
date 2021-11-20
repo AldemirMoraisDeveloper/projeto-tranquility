@@ -358,12 +358,34 @@ header nav ul li {
     font-weight: lighter;
 }
 
+.apresentacao {
+    background-color: hsl(45, 48%, 61%,0.4);
+    height: 370px;
+    margin-top: -160px;
+}
+
+.apresentacao h2 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.apresentacao p {
+    text-align: justify;
+    text-indent: 30px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.redes {
+    padding: 20px;
+}
+
 
 /*STYLE PARA SERVIÇOS*/
 
 .servicos {
     padding: 15px;
-    background-color:hsl(45, 48%, 61%,0.4);
+    background-color: hsl(45, 48%, 61%,0.4);
 
 }
 
@@ -490,6 +512,12 @@ header nav ul li {
 
 /*Especial para mapa*/
 
+@media (max-width: 1200px) {
+    .apresentacao {
+        height: 500px;
+    }
+}
+
 @media (max-width: 1000px) {
     .contato {
         padding: 60px 0;
@@ -513,6 +541,11 @@ header nav ul li {
 .buscar-quarto {
     margin: auto;
   }
+
+.apresentacao {
+    height: 550px;
+}  
+
 }
 
 
@@ -542,8 +575,11 @@ header nav ul li {
     .buscar-quarto {
         margin: auto;
     }
-}
 
+    .apresentacao {
+        height: 600px;
+  }
+}
 
 /*Landscape phone portrait tablet*/
 
@@ -562,7 +598,11 @@ header nav ul li {
         width: 400px;
         margin-right: 65px;
         margin-left: 40px;
- }
+  }
+
+  .apresentacao {
+    height: 700px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -580,6 +620,10 @@ header nav ul li {
         
         
     }
+
+    .apresentacao {
+        height: 900px;
+  }
 }
 
     @media (max-width: 500px) {
@@ -595,7 +639,11 @@ header nav ul li {
         .buscar-quarto {
             margin: auto;
         }
+
+        .apresentacao {
+            height: 900px;
     }
+}
 
 /*Landscape phones and down*/
 
@@ -620,8 +668,6 @@ header nav ul li {
         margin: auto;
     }
 
-
-
     header nav ul li a{
         position: fixed;
         bottom: 0;
@@ -643,6 +689,16 @@ header nav ul li {
     header nav p {
         width: 100%;
         text-align: center;
+    }
+
+    .apresentacao {
+        height: 1300px;
+  }
+}
+
+@media (max-width: 320px) {
+    .apresentacao {
+        height: 100;
     }
 }
 /* Corrigindo o escrollamento mobile*/
@@ -861,4 +917,23 @@ label {
 
 .historia {
     color: var(--cor01);
+}
+
+/*STYLE PARA ESTACIONAMENTO*/
+
+.estacione {
+    color: var(--cor01);
+    text-align: center;
+    height: 200px;
+}
+
+.textoestacione {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    margin-top: -130px;
+    padding: 20px;
+}
+
+main img {
+    width: 100%;
 }

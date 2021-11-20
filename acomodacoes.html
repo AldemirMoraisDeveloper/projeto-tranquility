@@ -17,19 +17,24 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="acomodacoes.html">Acomodações</a></li>
-                <li><a href="index.html">Serviços</a></li>
-                <li><a href="index.html">Contato</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Reserva</a></li>
             </ul>
         </nav>
     </header>
     <div id="home" class="header-content">
         <h1 class="hotel">Tranquility Hotel</h1>
         <p>A tranquilidade que você precisa está aqui!</p>
-        <button class="explorar">Explorar</button>
+        <button class="explorar"><a href="historia.html">Explorar</a></button>
+    </div>
+    <div class="apresentacao">
+        <h2>Conheça nossas acomodações</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae debitis quasi voluptatibus obcaecati neque commodi quas vitae. Quis voluptatibus a, ullam ducimus facere nemo error fugit praesentium. Obcaecati, iste dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae veritatis fuga rem delectus sit. Neque, aperiam provident. Culpa nihil repellendus dolores nostrum, ratione architecto laboriosam eaque earum mollitia omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae debitis quasi voluptatibus obcaecati neque commodi quas vitae. Quis voluptatibus a, ullam ducimus facere nemo error fugit praesentium. Obcaecati, iste dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae veritatis fuga rem delectus sit. Neque, aperiam provident. Culpa nihil repellendus dolores nostrum, ratione architecto laboriosam eaque earum mollitia omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta.</p>
     </div>
     <section id="quartos" class="quartos">
-        <h1 class="quarto-title">Conheça nossas acomodações</h1>
+        <h1 class="quarto-title">Quartos para todos os gostos</h1>
         <div class="quarto-cards">
             <div class="card">
                 <div class=" card-tag card-text-top">
@@ -166,5 +171,53 @@
         <input class="opcao2" type="submit" value="Selecionar">
     </div>     
     </section>
+    <section id="contato" class="contato">
+        <div class="contato-card">
+            <h1>Fale Conosco</h1>
+            <ul class="redes">
+               <li><i data-feather="map-pin"></i>Rua Leblon, 255 - Praia Grande - SP</li>  
+               <li><i data-feather="mail"></i>contato@tranquilityhotel.com.br</li>  
+               <li><i data-feather="phone"></i>+55 - 13 22225555</li>  
+               <li><i data-feather="instagram"></i>Instagram</li>  
+               <li><i data-feather="facebook"></i>Facebook</li>  
+               <li><i data-feather="twitter"></i>Twitter</li>  
+            </ul>
+        </div>
+        <div id="map"></div>
+    </section>
+
+    <script>
+        feather.replace();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"
+    async
+    ></script>
 </body>
 </html>
