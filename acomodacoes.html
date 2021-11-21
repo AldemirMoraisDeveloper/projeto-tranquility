@@ -29,9 +29,19 @@
         <p>A tranquilidade que você precisa está aqui!</p>
         <button class="explorar"><a href="historia.html">Explorar</a></button>
     </div>
-    <div class="apresentacao">
+    <!--<div class="apresentacao">
         <h2>Conheça nossas acomodações</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae debitis quasi voluptatibus obcaecati neque commodi quas vitae. Quis voluptatibus a, ullam ducimus facere nemo error fugit praesentium. Obcaecati, iste dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae veritatis fuga rem delectus sit. Neque, aperiam provident. Culpa nihil repellendus dolores nostrum, ratione architecto laboriosam eaque earum mollitia omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae debitis quasi voluptatibus obcaecati neque commodi quas vitae. Quis voluptatibus a, ullam ducimus facere nemo error fugit praesentium. Obcaecati, iste dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae veritatis fuga rem delectus sit. Neque, aperiam provident. Culpa nihil repellendus dolores nostrum, ratione architecto laboriosam eaque earum mollitia omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. quo cumque ducimus odit et sed libero molestias, laborum nulla, quibusdam autem unde minus aliquid obcaecati, deserunt nesciunt porro excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos incidunt aliquid ex dolores, vel, doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta in. doloremque mollitia earum dicta fuga labore quo. Possimus, error aut perspiciatis dolores porro dicta.</p>
+    </div>-->
+    <div id="reserva" class="reservas">
+        <input type="date">
+        <input type="date">
+        <input type="number"
+        placeholder = "Adultos">
+        <input type="number"
+        placeholder = "Crianças">
+        <a class="buscar-quarto" href="#quartos">Buscar Quartos</a>
+    <!--<input class="btreserva" type="submit" value="Buscar Quartos">-->
     </div>
     <section id="quartos" class="quartos">
         <h1 class="quarto-title">Quartos para todos os gostos</h1>
@@ -55,8 +65,10 @@
                         <li><i data-feather="wind"></i>Ar Condicionado</li>
                     </ul>
                 </div>
-                <input class="opcao" type="submit" value="Selecionar">
+                <button onclick="ReservarQuarto('Reserve Agora!')" class="opcao">Selecionar</button>
+                <script src="forms.js"></script>
             </div>
+        
     
             <div class="card">
                 <div class=" card-tag card-text-top">
@@ -106,15 +118,15 @@
          <div class="quarto-cards">
     <div class="card">
         <div class=" card-tag card-text-top">
-            <p>Standard</p>
+            <p>Duplo</p>
         </div>
         <div class=" card-tag card-text-bottom">
             <p>Promoção</p>
         </div>
-        <img class="card-image" src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Suíte Solteiro">
+        <img class="card-image" src="./imagens/quarto-duplo.jpg" alt="Quarto Duplo">
         <div class="card-text">
-            <h1>Suíte-Solteiro</h1>
-            <p><del>R$ 210</del> <sup>R$</sup><strong>180.00</strong></p>
+            <h1>Quarto Duplo</h1>
+            <p><del>R$ 420</del> <sup>R$</sup><strong>360.00</strong></p>
             <p>Diária</p>
             <ul>
                 <li><i data-feather="coffee"></i> Café da manhã incluso</li>
@@ -127,14 +139,14 @@
     </div>
     <div class="card">
         <div class=" card-tag card-text-top">
-            <p>Standard</p>
+            <p>Duplo</p>
         </div>
         <div>
         </div>
-        <img class="card-image" src="https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_960_720.jpg" alt="Suíte Casal">
+        <img class="card-image" src="./imagens/luxo-dulpo.jpg" alt="Luxo Duplo">
         <div class="card-text">
-            <h1>Suíte-Casal</h1>
-            <p><strong>R$ 290.00</strong></p>
+            <h1>Luxo-Duplo</h1>
+            <p><strong>R$ 599.00</strong></p>
             <p>Diária</p>
             <ul>
                 <li><i data-feather="coffee"></i> Café da manhã incluso</li>
@@ -147,16 +159,16 @@
     </div>
     <div class="card">
         <div class=" card-tag card-text-top">
-            <p>Luxo</p>
+            <p>Master</p>
         </div>
         <div>
             <div class="quartos card-esgotado">
-                <p>Último Quarto</p>
+                <p>Últimas Unidades!</p>
             </div>
-            <img class="card-image" src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Suíte Luxo">
+            <img class="card-image" src="./imagens/master-luxo.jpg" alt="Master Luxo">
             <div class="card-text">
-                <h1>Suíte-Luxo</h1>
-                <p><strong>R$ 440.00</strong></p>
+                <h1>Master-Luxo</h1>
+                <p><strong>R$ 799.00</strong></p>
                 <p>Diária</p>
                 <ul>
                     <li><i data-feather="coffee"></i> Café da manhã incluso</li>
@@ -168,7 +180,8 @@
                 </ul>
             </div>
         </div>
-        <input class="opcao2" type="submit" value="Selecionar">
+        <button onclick="ReservarQuarto('Ultimas Unidades!')" class="opcao2">Selecionar</button>
+        <script src="forms.js"></script>
     </div>     
     </section>
     <section id="contato" class="contato">

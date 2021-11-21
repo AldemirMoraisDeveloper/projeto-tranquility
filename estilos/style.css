@@ -176,6 +176,14 @@ div.reservas input {
     border-radius: 5px;
 }
 
+input::placeholder {
+    color: #fff;
+}
+
+#reserva {
+    margin-top: -150px;
+}
+
 /*STYLE PARA HEADER NAV*/
 
 header nav {
@@ -358,7 +366,7 @@ header nav ul li {
     font-weight: lighter;
 }
 
-.apresentacao {
+/*.apresentacao {
     background-color: hsl(45, 48%, 61%,0.4);
     height: 370px;
     margin-top: -160px;
@@ -375,7 +383,7 @@ header nav ul li {
     margin-top: 10px;
     padding: 20px;
 }
-
+*/
 .redes {
     padding: 20px;
 }
@@ -937,3 +945,71 @@ label {
 main img {
     width: 100%;
 }
+
+/*STYLE PARA LAZER*/
+
+#lazer h1 {
+    text-align: center;
+    color: var(--cor01);
+    margin-top: 20px;
+}
+
+#lazer p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    margin: 40px 20px;
+}
+
+#lazer img {
+    width: 100%;
+}
+
+.piscina {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.piscina h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.piscina p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+.jogos {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.jogos h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.jogos p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+.parque {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.parque h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.parque p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+
