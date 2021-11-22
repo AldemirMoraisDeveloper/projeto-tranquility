@@ -946,6 +946,140 @@ main img {
     width: 100%;
 }
 
+/*STYLE PARA SERVIÇO DE QUARTO*/
+
+.pedidohospede {
+    color: var(--cor01);
+    text-align: center;
+    height: 200px;
+}
+
+.textopedido {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    margin-top: -130px;
+    padding: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+.recep24 {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.recep24 h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.recep24 p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+.cafe {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.cafe h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.cafe p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+.governanca {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.governanca h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.governanca p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+/*STYLE PARA RESTAURANTE*/
+
+.food {
+    color: var(--cor01);
+    text-align: center;
+    height: 200px;
+}
+
+.textofood {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    margin-top: -130px;
+    padding: 20px;
+}
+
+.rest-capa img {
+    width: 100%;
+}
+
+.prato {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.prato h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.prato p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+.sobrem {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.sobrem h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.sobrem p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+.safra {
+    background-color: rgb(203, 203, 206, 0.6);
+    margin-top: 15px;
+}
+
+.safra h1 {
+    text-align: center;
+    color: var(--cor01);
+}
+
+.safra p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
 /*STYLE PARA LAZER*/
 
 #lazer h1 {
